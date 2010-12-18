@@ -1,0 +1,5 @@
+/lib/
+/build/
+/pom.xml
+/*.jar
+/.cake/
