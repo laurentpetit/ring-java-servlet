@@ -41,5 +41,5 @@ Write a clojure ring handler and place it somewhere in your source/resources fol
     </servlet-mapping>
 
 ### Test it
-That''s all. Next start you build your webapp and start it, you should see a "Hello world from ring java servlet" welcome message at http://the-server:the-port/<your-webapp-context>/foo.some-extension
+That''s all. Next time you build your webapp and start it, you should see a "Hello world from ring java servlet" welcome message at http://the-server:the-port/<your-webapp-context>/foo.some-extension
 
