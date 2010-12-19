@@ -7,7 +7,7 @@ Allows you to embed ring handlers in existing java web applications without havi
 ### Add the Ring java servlet dependency to your project
 Add this project as a dependency of your project. By means of transitive dependencies magic, you''ll need to add no other dependency.
 
-ring-java-servlet produces maven artifacts, with following coordinates:
+ring-java-servlet is distributed on clojars.org as a maven artifact, with following coordinates:
 
 * groupId=org.lpetit.ring
 * artifactId=ring-java-servlet
