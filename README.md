@@ -1,10 +1,11 @@
 #Ring java servlet
 
 Allows you to embed ring handlers in existing java web applications without having to add an AOT phase to your build process, by providing you with a generic way to declare servlets in your web.xml, and where the clojure ring handler is located.
+
 It also provides a ServletContextListener which can be configured to run a function when the web app is initialized and destroyed.
 
 ##Setup
-Add this project as a dependency of your project. By means of transitive dependencies magic, you''ll need to add no other dependency.
+Add this project as a dependency of your project. By means of transitive dependencies magic, you'll need to add no other dependency.
 
 ring-java-servlet is distributed on clojars.org as a maven artifact, with following coordinates:
 
@@ -51,13 +52,13 @@ Any clojure function with one parameter can be used as the startup or shutdown f
 
     ; file lpetit.ring_test.clj
     (ns lpetit.context-test
-      (:require [org.lpetit.ring.servlet.util :as util])
+      (:require [org.lpetit.ring.servlet.util :as util]))
 
     (defn start-up [ctx]
-      (println "Starting app with params: " (util/context-params ctx))
+      (println "Starting app with params: " (util/context-params ctx)))
 
     (defn shutdown [ctx]
-      (println "Stopping app with params: " (util/context-params ctx))
+      (println "Stopping app with params: " (util/context-params ctx)))
 
 
 ### Declare the ServletContextListener in your web.xml
